@@ -1,0 +1,77 @@
+source("histolarg.R")
+source("histoeff.R")
+vent<-read.table("vent.csv",sep=";",header=T)
+attach(vent)
+
+n<-length(A1)
+
+
+##########################Partie 1
+############################Q1
+
+#Histogrammes de A1
+histolarg(A1)
+histoeff(A1)
+
+#Graphe de probabilités pour la loi normale
+plot(A1[1:n-1],qnorm(seq(1:(n-1))/n))
+
+# Estimation de m et sigma^2 par le graphe de probabilités
+reg1<-lm(qnorm(seq(1:(n-1))/n)~A1[1:(n-1)])
+abline(reg1)
+sigma1<- 1/(reg1$coefficients[2])
+m1 <- -reg1$coefficients[1]/reg1$coefficients[2]
+
+sigma1^2
+m1
+
+#Histogrammes de A2
+histolarg(A2)
+histoeff(A2)
+
+#Graphe de probabilités pour la loi normale
+plot(A2[1:n-1],qnorm(seq(1:(n-1))/n))
+
+# Estimation de m et sigma^2 par le graphe de probabilités
+reg2<-lm(qnorm(seq(1:(n-1))/n)~A2[1:(n-1)])
+abline(reg2)
+
+sigma2<- 1/(reg2$coefficients[2])
+m2 <- -reg2$coefficients[1]/reg2$coefficients[2]
+
+sigma2^2
+m2
+################Q4
+
+X <- (A1^2 + A2^2)
+X<- sort(X)
+n <- length(X)
+
+plot(X[1:(n-1)], log(1-seq(1:(n-1))/n))
+
+reg_ray<-lm(log(1-seq(1:(n-1))/n)~X[1:(n-1)])
+
+abline(reg_ray)
+
+sigma_carre <- -1/(2*reg_ray$coefficients[2])
+
+sigma_carre
+
+#######################Partie 2################
+source("simu_rayleigh.R")
+compare_estimateurs(1000,5,10)
+compare_estimateurs(1000,50,10)
+compare_estimateurs(1000,500,10)
+compare_estimateurs(1000,5000,10)
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,469 @@
+body{
+    padding: 0;
+    margin: 0;
+    
+    
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* **********************NAVBAR************************** */
+
+
+
+nav{
+
+    z-index:10000;
+    background-color:rgb(12, 13, 13);
+
+    position: sticky;
+    top:0;
+    height:3.5em;
+    width:100%;
+    opacity:0.9;
+    
+    
+}
+
+
+nav ul{
+    display:flex;
+    
+    margin:0;
+    height:3.5em;
+
+    
+    float: right;
+    
+}
+
+#contact{
+    background: rgb(19, 124, 174) ;
+    
+    border-radius: 50%;
+}
+
+nav ul li{
+    
+    padding: 0 1.5em;
+    justify-items:center;
+    
+    
+    
+}
+
+nav li a{
+    text-decoration: none;
+    color:white;
+    font-size: 1.2em;
+    line-height: 3em;
+    
+}
+
+nav li a:hover{
+    font-weight: bold;
+    text-transform: all 0.6s ease-out;
+    
+}
+
+nav li:hover {
+    background: rgb(19, 124, 174) ;
+    
+    border-radius: 50%;
+    text-transform: all 0.3s ease-out;
+}
+
+
+
+/* ***************************PREMIEREPAGE************************** */
+
+
+
+#imagePage1{
+    
+    
+    height: 36.1em;
+    width: cover;
+    
+    background:  linear-gradient(90deg,rgba(0,0,255,0.7),rgba(255,255,255,0.7)), 
+                url("imagesCV/fond_page_d\'accueil.jpg") fixed no-repeat 50% 50% ;
+
+    background-size: cover; 
+    text-align: center;
+}
+
+#imagePage1 h1,h3{
+    color:antiquewhite;
+}
+
+#imagePage1 h1{
+    font-size: 3em;
+    padding-top: 0;
+}
+
+#imagePage1 h3{
+    font-size: 2em;
+}
+
+#imagePage1 img{
+    padding-top: 8em;
+}
+
+/* *******************************DEUXIEMEPAGE**************************** */
+
+#deuxiemePage img{
+    
+    border-radius: 10%;
+    
+    box-shadow: 5px 4px 5px;
+    float:left;
+    height:28em;
+    width:25em;
+}
+
+#deuxiemePage{
+    display:flex;
+    margin-top: 5em;
+    justify-content:space-between;
+    padding-top: 3em;
+    height:42em;
+    padding-left:2em;
+    
+    
+}
+#deuxiemePage article{
+    padding-top: 0;
+    padding-left: 7em;
+    
+}
+
+#deuxiemePage article h1 {
+    
+    margin-top: 1.8em;
+    margin-bottom: 0;
+    color: rgb(19, 124, 174,1);
+    border-radius: 4px;
+    width: 60%;
+   
+    height: 1.3em;
+    font-size: 3em;
+}
+
+#deuxiemePage article p 
+{
+  margin-top: 6em;
+  text-align: justify;
+  width: 80%;
+}
+
+
+/* *****************************TROISIEMEPAGE****************************** */
+
+#troisiemePage{
+    height:45em;
+    background-color: #f1f1f1;
+    
+    
+}
+
+/* *************************************TIMELINE***************************** */
+.timeline
+{
+  position: relative;
+  margin: 2em auto;
+  width:80%;
+  box-sizing: border-box;
+}
+
+.timeline ul li
+{
+  line-height: normal;
+  position:relative;
+  width:50%;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.timeline ul li:nth-child(odd)
+{
+  float: left;
+  text-align: right;
+  clear: both;
+  padding-right:2em;
+
+
+}
+
+.timeline ul li:nth-child(even)
+{
+  float: right;
+  text-align: left;
+  clear: both;
+  padding-left:2em;
+  
+
+}
+
+.timeline::before
+{
+  content:'';
+  position:absolute;
+  left:50%;
+  width:0.2em;
+  height:100%;
+  background:black;
+}
+
+.timeline ul li:nth-child(odd)::before
+{
+  content:'';
+  position: absolute;
+  width:1em;
+  height:1em;
+  background:rgba(19, 124, 174,1);
+  border-radius:10px;
+  box-shadow:0 0 0 0.3em rgba(19, 124, 174,0.2);
+  right:-0.61em;
+
+
+}
+
+.timeline ul li:nth-child(even)::before
+{
+  content:'';
+  position: absolute;
+  width:1em;
+  height:1em;
+  background:rgba(19, 124, 174,1);
+  border-radius:10px;
+  box-shadow:0 0 0 0.3em rgba(19, 124, 174,0.2);
+  left: -0.41em;
+
+
+}
+
+.timeline ul li:nth-child(odd) .time
+{
+  position: absolute;
+  width:5em;
+  background: rgb(19, 124, 174);
+  border-radius:5px;
+  box-shadow:0 0 0 0.3em rgb(19, 124, 174,0.2);
+  top:0;
+  left:33em;
+  line-height: 0.2em;
+}
+
+.timeline ul li:nth-child(even) .time
+{
+  position: absolute;
+  width:5em;
+  background: rgb(19, 124, 174);
+  border-radius:5px;
+  box-shadow:0 0 0 0.3em rgb(19, 124, 174,0.2);
+  top:0;
+  right:33em;
+  line-height: 0.2em;
+}
+
+.content h3
+{
+  color : rgb(19, 124, 174);
+  font-weight:0;
+}
+
+.timeline ul
+{
+  height:27em;
+}
+ .timeline ul li
+ {
+   padding-bottom: 3em;
+ }
+
+ .timeline ul #last_li
+ {
+   padding-bottom:0
+ }
+
+ .timeline ul li .time h4
+ {
+   color:rgb(233, 246, 247);
+ }
+
+ 
+
+ #intTroisiemePage
+ {
+   padding-top:3.5em;
+   display:flex;
+   flex-direction:column;
+   align-items:center;
+   
+ }
+
+ #intTroisiemePage h1
+ {
+   text-align: center;
+   color:rgb(19, 124, 174);
+   font-size:3em;
+   width:18%;
+   border-radius: 4px;
+ }
+  /* ****************************QUATRIEMEPAGE************************************************ */
+  #quatriemePage
+  {
+    
+    height:40em;
+    width:100%;
+    
+    
+
+    
+  }
+
+  #intQuatriemePage
+  {
+    padding-top:5em;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    
+    
+    
+  }
+  #intQuatriemePage h1
+  {
+    color:white;
+    background-color: rgb(19, 124, 174);
+    width:15%;
+    margin:0;
+    text-align: center;
+    font-size:3em;
+    border-radius: 4px;
+    
+    
+    
+
+  }
+  #intQuatriemePage form
+{
+  padding-top:3em;
+  width:100%;
+}
+
+/* *********************************CINQUIEMEPAGE*************************** */
+
+#cinquiemePage
+  {
+    
+    height:30em;
+    width:100%;
+    background-color: #f1f1f1;
+
+   
+    
+    
+
+    
+  }
+
+  #intCinquiemePage
+  {
+    padding-top:5em;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    
+
+    
+    
+    
+    
+  }
+
+  
+
+  #intCinquiemePage a
+  {
+    
+    color:white;
+    background-color: rgb(19, 124, 174);
+    
+    width:40%;
+    margin:0;
+    text-align: center;
+    font-size:1.8em;
+    border-radius: 4px;
+    
+
+  }
+  #intCinquiemePage img
+  {
+    margin-bottom: 2em;
+  }
+
+  #intCinquiemePage a:hover
+  {
+    
+    color:white;
+    background-color: rgb(19, 124, 174);
+    width:60%;
+    margin:0;
+    text-align: center;
+    font-size:2.7em;
+    border-radius: 4px;
+    box-shadow: 5px 4px 5px black;
+    
+
+  }
+
+
+  /* *************************FOOTER************** */
+  
+footer
+  {
+    background-color:#333333;
+    height: 20em;
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: center;
+
+  }
+
+#meSuivre h2
+{
+  color:white;
+}
+
+#mesInformations h2,ul li
+{
+  color: white;
+}
+#mesInformations ul li
+{
+  list-style-type: disc;
+}
+
+
+#meSuivre
+{
+  padding-right: 20%;
+}
+
+#picto2
+{
+  height:2em;
+}

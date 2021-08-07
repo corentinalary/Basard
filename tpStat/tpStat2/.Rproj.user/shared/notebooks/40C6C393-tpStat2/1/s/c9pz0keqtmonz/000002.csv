@@ -1,0 +1,24 @@
+"0","source(""histolarg.R"")"
+"0","source(""histoeff.R"")"
+"0","vent<-read.table(""vent.csv"",sep="";"",header=T)"
+"0","attach(vent)"
+"2","The following objects are masked _by_ .GlobalEnv:
+
+    A1, A2
+
+"
+"2","The following objects are masked from vent (pos = 3):
+
+    A1, A2
+
+"
+"2","The following objects are masked from vent (pos = 4):
+
+    A1, A2
+
+"
+"0","n<-length(A1)"
+"0",""
+"0","A1 <- sort(A1)"
+"0",""
+"0","histolarg(A1)"

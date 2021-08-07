@@ -1,0 +1,22 @@
+---
+title: "Test"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+## Including Plots
+
+source("histolarg_corr_f1e2.R")
+
+m<-2
+sigma<-1
+
+simu<-rnorm(1000, m, sigma)
+hist(simu)
+
+

@@ -1,0 +1,4 @@
+"0",""
+"0","lumiere <- sort(lumiere)"
+"0",""
+"0","plot(lumiere[1:n-1],qnorm(seq(1:(n-1))/n))"

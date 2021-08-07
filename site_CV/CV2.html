@@ -1,0 +1,183 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>CV Corentin Alary-Ferrandiz</title>
+        <link rel="stylesheet" href="cssCV2.css">
+
+    </head>
+
+    <body>
+        <header>
+            
+
+            <div id="imagePage1">
+                <img src="imagesCV/logoCV3.png" alt="logoCV"/>
+                <h1>Corentin Alary-Ferrandiz</h1>
+                <div id="premierTrait"></div>
+                <h3>Etudiant en école d'ingénieur</h3>
+            </div>
+
+
+        </header>
+
+        <section>
+
+            <nav>
+                <ul>
+                    
+                    <li><a href='#troisiemePage'>Formation</a></li>
+                    <li><a href='#Expérience'>Expérience</a></li>
+                    <li><a href='#Formation'>Compétences</a></li>
+                    <li><a href='#cinquiemePage'>Curriculum vitæ</a></li>
+                    <li id="contact"><a href='#quatriemePage'>Contact</a></li>
+                    
+                </ul>
+
+               
+              
+
+            </nav>
+
+            <div id="deuxiemePage">
+                <img src="imagesCV/photoCV.jpg" alt="photoCV" />
+
+                <article>
+                
+                <h1>Quelques mots sur moi...</h1>
+                
+                <p>Diplômé en 2014 au sein de l'école de l'expertise informatique EPITECH, 
+                    j'ai ensuite suivi une formation militaire dans l'armée de l'air afin de devenir sous-officier avec comme spécialité "administrateur réseau". 
+                    Cette césure m'a permis de travailler sur des projets web personnels et d'approfondir mes connaissances dans les langages front end et les CMS. 
+                    Suite à cette expérience j'ai pu acquérir des qualités essentielles en entreprise comme la cohésion de groupe.
+                     Je suis actuellement à la recherche d'un emploi à plein temps en tant que développeur web.</p>
+                </article>
+            </div>
+
+
+
+            <div id="troisiemePage">
+
+              <div id=intTroisiemePage>
+                <h1>Formation</h1>
+
+                <div class="timeline">
+
+                  <ul>
+                    <li>
+                      <div class="content">
+                        <h3>Baccalauréat Scientifique</h3>
+                        <p> Baccalauréat Scientifique section européenne anglais mention Bien </p>
+                      </div>
+                      <div class="time">
+                        <h4>2017-2018</h4>
+                      </div>
+                    </li>
+
+                    <li>
+                      <div class="content">
+                        <h3>Classe Préparatoire aux grandes écoles</h3>
+                        <p>La Prépa des INP Nancy avec spécialité maths et informatique en 2ème année</p>
+                      </div>
+                      <div class="time">
+                        <h4>2018 - 2020</h4>
+                      </div>
+                    </li>
+
+                    <li id="last_li">
+                      <div class="content">
+                        <h3>1ère Année à l'ENSIMAG</h3>
+                        <p>Admission à Grenoble-inp ENSIMAG </br>( École nationale supérieure d'informatique et de mathématiques appliquées)</p>
+                      </div>
+                      <div class="time">
+                        <h4>2020-2021</h4>
+                      </div>
+                    </li>
+                    <div style="clear: both;"></div>
+                  </ul>
+                </div>
+              </div>                
+
+            </div>
+
+            <div id="quatriemePage">
+
+              <div id="intQuatriemePage">
+
+                <h1>Contact</h1>
+
+                <form method="post" action="tratement.php">
+                  
+                  <fieldset>
+                    <legend>Vos coordonnées</legend>
+                    <p>
+                      <label for="Prenom">Quel est votre Prénom ? </label>
+                      <input type="text" name="Prenom" id="Prenom" placeholder="Prénom ?"/>
+                    </p>
+
+                    <p>
+                      <label for="Nom">Quel est votre nom ? </label>
+                      <input type="text" name="Nom" id="Nom" placeholder="Nom ?"/>
+                    </p>
+
+                    <p>
+                      <label for="AdresseMail">Quel est votre e-mail ? </label>
+                      <input type="email" name="AdresseMail" id="AdresseMail" placeholder="Adresse mail ?" required/>
+                    </p>
+
+                    <p>
+                      <label for="ameliorer">Comment pensez-vous que je pourrais améliorer mon site ?</label><br />
+                      <textarea rows="10" cols="50" name="ameliorer" id="ameliorer"></textarea>
+                  </p>
+
+                    <input type="submit" value="Envoyer"/>
+
+                  </fieldset>
+
+                </form>
+              </div>
+
+
+
+            </div>
+
+
+            <div id="cinquiemePage">
+
+              <div id ="intCinquiemePage">
+
+                <img src="imagesCV/fleches.png" alt="fleches"/>
+          
+                <a href='imagesCV/CV.pdf'>Voir mon Curriculum vitæ</a>
+              
+
+              </div>
+
+            </div>
+
+        </section>
+        <footer>
+        
+          <div id = "meSuivre">
+            <h2>Me Suivre :</h2>
+
+            <ul>
+              <li><a href="imagesCV/picto-facebook.png"><img id ="picto1" src="imagesCV/picto-facebook.png" alt="facebook"/></a></li>
+              <li><a  href="imagesCV/picto-linkedin.png"><img id="picto2" src="imagesCV/picto-linkedin.png" alt="linkedin"/></a></li>
+            </ul>
+      
+          </div>
+
+          <div id="mesInformations">
+            <h2>Mes Informations :</h2>
+            <ul>
+              <li>Tel : 0652396218</li>
+              <li>Email : alarycorentin@gmail.com</li>
+            </ul>
+
+          </div>
+
+        </footer>
+        
+
+    </body>
+</html>

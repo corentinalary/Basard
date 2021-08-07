@@ -1,0 +1,2 @@
+"0","reg2<-lm(qnorm(seq(1:(n-1))/n)~A2[1:(n-1)])"
+"0","abline(reg2)"

@@ -1,0 +1,8 @@
+"0","A1 <-rnorm(n, 0, sigma)"
+"0","A1carre <-A1^2"
+"0","  "
+"0","A2 <- rnorm(n, 0, sigma)"
+"0","A2carre<- A2^2"
+"0","  "
+"0","Xcarre<-A1carre + A2carre"
+"0","X<-sqrt(Xcarre)"
