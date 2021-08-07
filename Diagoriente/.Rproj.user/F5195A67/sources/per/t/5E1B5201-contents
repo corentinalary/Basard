@@ -1,0 +1,10 @@
+---
+title: "diagorente"
+output: pdf_document
+---
+```{r}
+data<-read.csv2("/home/corentinalary/Diagoriente/eventadvisor.csv")
+summary(data)
+```
+
+
