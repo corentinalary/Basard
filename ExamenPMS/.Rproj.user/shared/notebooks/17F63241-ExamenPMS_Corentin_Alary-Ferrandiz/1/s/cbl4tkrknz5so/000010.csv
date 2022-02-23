@@ -1,2 +1,0 @@
-"0","reg<-lm(qnorm(seq(1:(n-1))/n)~lumiere[1:(n-1)])"
-"0","abline(reg)"
